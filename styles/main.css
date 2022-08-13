@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body.locked {
+    overflow: hidden;
+}
+
 .offer {
     padding-top: 14px;
     padding-bottom: 14px;
@@ -17,6 +21,10 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     background: #E6E1D6;
+}
+
+.nav__button {
+    cursor: pointer;
 }
 
 .banner {
@@ -354,6 +362,10 @@ body {
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
+}
+
+.menu {
+    background: #CFACAD;
 }
 
 /* Media */

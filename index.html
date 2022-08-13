@@ -24,32 +24,55 @@
 			Get 10% Off Your First Order with Code WELCOME10
 		</div>
 	</div>
-	<nav class="nav">
+	<nav class="navbar nav text-center">
 		<div class="container">
-			<div class="row text-center">
-				<div class="col nav__button d-flex align-self-center justify-content-center">
-					<img src="./img/nav/nav-button.svg" alt="button">
+			<div class="col">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<a href="#" class="col logo">
+				<img src="./img/nav/logo.svg" alt="logo">
+			</a>
+			<a href="#" class="col nav__cart d-flex align-self-center justify-content-center">
+				<img src="./img/nav/cart.svg" alt="cart">
+			</a>
+			<div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasDarkNavbar"
+				aria-labelledby="offcanvasDarkNavbarLabel">
+				<div class="offcanvas-header">
+					<button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+						aria-label="Close"></button>
 				</div>
-				<a href="#" class="col logo">
-					<img src="./img/nav/logo.svg" alt="logo">
-				</a>
-				<a href="#" class="col nav__cart d-flex align-self-center justify-content-center">
-					<img src="./img/nav/cart.svg" alt="cart">
-				</a>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li class="nav-item">
+							<a class="nav-link" href="#">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</nav>
-	<div class="banner">
-		<a href="#" class="text-white text-center text-decoration-none banner__button">Shop NEW Summer Collection!</a>
-	</div>
-	<div class="text-center text">
+	<header class="banner">
+		<a href="#product" class="text-white text-center text-decoration-none banner__button">Shop NEW Summer
+			Collection!</a>
+	</header>
+	<section class="text-center text">
 		<div class="container">
 			<h1 class="text__title title">We Make Feeling Comfortable in Your Own Skin Natural</h1>
-			<p>Kal Hans symbolizes transformation. Let's celebrate what makes you unique with our 100% all Natural,
+			<p>Kal Hans symbolizes transformation. Let's celebrate what makes you unique with our 100% all
+				Natural,
 				Vegan, Luxury skincare line, getting you one step closer to being your best self.</p>
 		</div>
-	</div>
-	<section class="products">
+	</section>
+	<section id="product" class="products">
 		<div class="container">
 			<h2 class="text-center header products__header">The Skincare Essentials</h2>
 			<div class="row text-center">
@@ -112,7 +135,7 @@
 						<img src="./img/about/image.png" alt="">
 					</div>
 				</div>
-				<div class="col-xl-6 col-s-12 text-center text-white about__text">
+				<div id="about" class="col-xl-6 col-s-12 text-center text-white about__text">
 					<h3 class="about__text-title">Free From</h3>
 					<ul class="about__text-list list-unstyled">
 						<li>GMO's</li>
@@ -131,7 +154,8 @@
 			<h3 class="review__title">
 				<a class="text-decoration-none" href="#">@kalhansnaturals</a>
 			</h3>
-			<p class="review__text">Follow us to share snaps of you 💕 and your glowing skin ✨🌿💧 & learn more about
+			<p class="review__text">Follow us to share snaps of you 💕 and your glowing skin ✨🌿💧 & learn more
+				about
 				fun events, contests 🎁 and giveaways.</p>
 			<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
@@ -142,34 +166,43 @@
 									<div class="review__icon-image"><img src="./img/review/01.png" alt="image">
 										<div class="review__icon-text-wrapper">
 											<div class="review__icon-text">
-												<span>Use this simple Skincare Routine for Dry Skin and watch your
+												<span>Use this simple Skincare Routine for Dry Skin and watch
+													your
 													skin’s look and
 													texture
-													transform🌿💕✨💦 ⭐️Step 1: Cleanse with a gentle antioxidant rich
+													transform🌿💕✨💦 ⭐️Step 1: Cleanse with a gentle antioxidant
+													rich
 													cleanser that
 													doesn't
-													strip your skin of oils. Drying face washes can do this and leave
+													strip your skin of oils. Drying face washes can do this and
+													leave
 													skin damaged.
 													⭐️Step 2:
-													Tone with a deep hydrating toner that locks in moisture such as
+													Tone with a deep hydrating toner that locks in moisture such
+													as
 													Hyaluronic Acid.
 													Try
 													our
-													Aloe Cucumber Mist with Niacinamide that locks in moisture and
+													Aloe Cucumber Mist with Niacinamide that locks in moisture
+													and
 													exfoliates the
 													top
 													layer of
-													dry and damaged skin. ⭐️Step 3: Hydrate with a rich moisturizer like
+													dry and damaged skin. ⭐️Step 3: Hydrate with a rich
+													moisturizer like
 													our
 													multifunctional
-													Daily Moisture Sun Protection Lotion. It works great with all skin
+													Daily Moisture Sun Protection Lotion. It works great with
+													all skin
 													types and
 													also
 													protects
-													from the sun and pollution with ingredients like Aloe Vera Juice,
+													from the sun and pollution with ingredients like Aloe Vera
+													Juice,
 													Ashwagandha,
 													Lodhra, &
-													Nagkesar. ⭐️Step 4: If you have very dry skin you can incorporate
+													Nagkesar. ⭐️Step 4: If you have very dry skin you can
+													incorporate
 													this
 													additional
 													step. Lock
@@ -177,7 +210,8 @@
 													rejuvenate damaged
 													dry
 													skin like
-													our R&R Night Serum with Rosehip, Seabuckthorn, Hemp and Pomegranate
+													our R&R Night Serum with Rosehip, Seabuckthorn, Hemp and
+													Pomegranate
 													oil Follow
 													for
 													30 days
@@ -194,11 +228,15 @@
 									<div class="review__icon-image"><img src="./img/review/02.png" alt="image">
 										<div class="review__icon-text-wrapper">
 											<div class="review__icon-text">
-												<span>Beach babe @aliajashanmal 💕 makes sure her skin stays cool,
-													protected and hydrated whether diving 🐳 laying by the beach 🏝 or
+												<span>Beach babe @aliajashanmal 💕 makes sure her skin stays
+													cool,
+													protected and hydrated whether diving 🐳 laying by the beach
+													🏝 or
 													hanging by the pool 👙 Check our all NEW Summer ☀️ Skincare
-													Collection for multitasking skincare products that work whilst you
-													play. Natural 🌿Vegan 🐰 & Sustainable 🌎 Skincare for beautiful
+													Collection for multitasking skincare products that work
+													whilst you
+													play. Natural 🌿Vegan 🐰 & Sustainable 🌎 Skincare for
+													beautiful
 													luminous skin ✨Shop at www.kalhans.com</span>
 											</div>
 										</div>
@@ -210,22 +248,35 @@
 									<div class="review__icon-image"><img src="./img/review/03.png" alt="image">
 										<div class="review__icon-text-wrapper">
 											<div class="review__icon-text">
-												<span>Our Daily Moisture Sun ☀️ Protection Lotion is a multi- tasking
-													wonder. This 3-in-one cream protects ☂ brightens ✨ and moisturizes
+												<span>Our Daily Moisture Sun ☀️ Protection Lotion is a multi-
+													tasking
+													wonder. This 3-in-one cream protects ☂ brightens ✨ and
+													moisturizes
 													🌊skin for a luminous radiance. The light weight formulation
-													effortlessly absorbs into your skin without leaving a trace while
-													giving you a daily dose of revitalizing moisture and helping protect
-													you from the sun and pollution. The rich natural ingredients in this
-													multi-functional cream also helps reduce signs of aging, protects
-													from tanning and enhances your skin's optimal health, leaving it
+													effortlessly absorbs into your skin without leaving a trace
+													while
+													giving you a daily dose of revitalizing moisture and helping
+													protect
+													you from the sun and pollution. The rich natural ingredients
+													in this
+													multi-functional cream also helps reduce signs of aging,
+													protects
+													from tanning and enhances your skin's optimal health,
+													leaving it
 													soft and dewy, Because, Who said you can't have it all? Key
-													Ingredients: 🌿Ashwagandha- Ashwagandha, is a potent antioxidant
+													Ingredients: 🌿Ashwagandha- Ashwagandha, is a potent
+													antioxidant
 													that helps protect skin from skin damaging free radicals
-													🌿Nagkesar-Nagkesar is a natural skin brightener that also helps
-													exfoliate skin for a fresh dewy glow. It also helps minimize open
-													pores and clarify skin for an even toned and glowing complexion.
-													🌿Lodhra- Lodhra works as a broad range UV protector with the
-													ability to block UVA and UVB wavelengths, limiting the overall
+													🌿Nagkesar-Nagkesar is a natural skin brightener that also
+													helps
+													exfoliate skin for a fresh dewy glow. It also helps minimize
+													open
+													pores and clarify skin for an even toned and glowing
+													complexion.
+													🌿Lodhra- Lodhra works as a broad range UV protector with
+													the
+													ability to block UVA and UVB wavelengths, limiting the
+													overall
 													impact of UV on the skin. Shop Now: www.kalhans.com💕</span>
 											</div>
 										</div>
@@ -241,34 +292,43 @@
 									<div class="review__icon-image"><img src="./img/review/01.png" alt="image">
 										<div class="review__icon-text-wrapper">
 											<div class="review__icon-text">
-												<span>Use this simple Skincare Routine for Dry Skin and watch your
+												<span>Use this simple Skincare Routine for Dry Skin and watch
+													your
 													skin’s look and
 													texture
-													transform🌿💕✨💦 ⭐️Step 1: Cleanse with a gentle antioxidant rich
+													transform🌿💕✨💦 ⭐️Step 1: Cleanse with a gentle antioxidant
+													rich
 													cleanser that
 													doesn't
-													strip your skin of oils. Drying face washes can do this and leave
+													strip your skin of oils. Drying face washes can do this and
+													leave
 													skin damaged.
 													⭐️Step 2:
-													Tone with a deep hydrating toner that locks in moisture such as
+													Tone with a deep hydrating toner that locks in moisture such
+													as
 													Hyaluronic Acid.
 													Try
 													our
-													Aloe Cucumber Mist with Niacinamide that locks in moisture and
+													Aloe Cucumber Mist with Niacinamide that locks in moisture
+													and
 													exfoliates the
 													top
 													layer of
-													dry and damaged skin. ⭐️Step 3: Hydrate with a rich moisturizer like
+													dry and damaged skin. ⭐️Step 3: Hydrate with a rich
+													moisturizer like
 													our
 													multifunctional
-													Daily Moisture Sun Protection Lotion. It works great with all skin
+													Daily Moisture Sun Protection Lotion. It works great with
+													all skin
 													types and
 													also
 													protects
-													from the sun and pollution with ingredients like Aloe Vera Juice,
+													from the sun and pollution with ingredients like Aloe Vera
+													Juice,
 													Ashwagandha,
 													Lodhra, &
-													Nagkesar. ⭐️Step 4: If you have very dry skin you can incorporate
+													Nagkesar. ⭐️Step 4: If you have very dry skin you can
+													incorporate
 													this
 													additional
 													step. Lock
@@ -276,7 +336,8 @@
 													rejuvenate damaged
 													dry
 													skin like
-													our R&R Night Serum with Rosehip, Seabuckthorn, Hemp and Pomegranate
+													our R&R Night Serum with Rosehip, Seabuckthorn, Hemp and
+													Pomegranate
 													oil Follow
 													for
 													30 days
@@ -293,11 +354,15 @@
 									<div class="review__icon-image"><img src="./img/review/02.png" alt="image">
 										<div class="review__icon-text-wrapper">
 											<div class="review__icon-text">
-												<span>Beach babe @aliajashanmal 💕 makes sure her skin stays cool,
-													protected and hydrated whether diving 🐳 laying by the beach 🏝 or
+												<span>Beach babe @aliajashanmal 💕 makes sure her skin stays
+													cool,
+													protected and hydrated whether diving 🐳 laying by the beach
+													🏝 or
 													hanging by the pool 👙 Check our all NEW Summer ☀️ Skincare
-													Collection for multitasking skincare products that work whilst you
-													play. Natural 🌿Vegan 🐰 & Sustainable 🌎 Skincare for beautiful
+													Collection for multitasking skincare products that work
+													whilst you
+													play. Natural 🌿Vegan 🐰 & Sustainable 🌎 Skincare for
+													beautiful
 													luminous skin ✨Shop at www.kalhans.com</span>
 											</div>
 										</div>
@@ -309,22 +374,35 @@
 									<div class="review__icon-image"><img src="./img/review/03.png" alt="image">
 										<div class="review__icon-text-wrapper">
 											<div class="review__icon-text">
-												<span>Our Daily Moisture Sun ☀️ Protection Lotion is a multi- tasking
-													wonder. This 3-in-one cream protects ☂ brightens ✨ and moisturizes
+												<span>Our Daily Moisture Sun ☀️ Protection Lotion is a multi-
+													tasking
+													wonder. This 3-in-one cream protects ☂ brightens ✨ and
+													moisturizes
 													🌊skin for a luminous radiance. The light weight formulation
-													effortlessly absorbs into your skin without leaving a trace while
-													giving you a daily dose of revitalizing moisture and helping protect
-													you from the sun and pollution. The rich natural ingredients in this
-													multi-functional cream also helps reduce signs of aging, protects
-													from tanning and enhances your skin's optimal health, leaving it
+													effortlessly absorbs into your skin without leaving a trace
+													while
+													giving you a daily dose of revitalizing moisture and helping
+													protect
+													you from the sun and pollution. The rich natural ingredients
+													in this
+													multi-functional cream also helps reduce signs of aging,
+													protects
+													from tanning and enhances your skin's optimal health,
+													leaving it
 													soft and dewy, Because, Who said you can't have it all? Key
-													Ingredients: 🌿Ashwagandha- Ashwagandha, is a potent antioxidant
+													Ingredients: 🌿Ashwagandha- Ashwagandha, is a potent
+													antioxidant
 													that helps protect skin from skin damaging free radicals
-													🌿Nagkesar-Nagkesar is a natural skin brightener that also helps
-													exfoliate skin for a fresh dewy glow. It also helps minimize open
-													pores and clarify skin for an even toned and glowing complexion.
-													🌿Lodhra- Lodhra works as a broad range UV protector with the
-													ability to block UVA and UVB wavelengths, limiting the overall
+													🌿Nagkesar-Nagkesar is a natural skin brightener that also
+													helps
+													exfoliate skin for a fresh dewy glow. It also helps minimize
+													open
+													pores and clarify skin for an even toned and glowing
+													complexion.
+													🌿Lodhra- Lodhra works as a broad range UV protector with
+													the
+													ability to block UVA and UVB wavelengths, limiting the
+													overall
 													impact of UV on the skin. Shop Now: www.kalhans.com💕</span>
 											</div>
 										</div>
@@ -337,10 +415,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="subscription text-center">
+	<section id="contact" class="subscription text-center">
 		<div class="container">
-			<h3 class=" header subscription__header">KH Newsletter</h3>
-			<p class="subscription__text">Sign up to our newsletter and we’ll keep you up to date with the latest
+			<h3 class="header subscription__header">KH Newsletter</h3>
+			<p class="subscription__text">Sign up to our newsletter and we’ll keep you up to date with the
+				latest
 				products, skincare news and exclusive discounts!</p>
 			<form action="#" class="subscription__form text-center">
 				<input type="email" class="subscription__input" placeholder="enter your email">
@@ -348,7 +427,7 @@
 			</form>
 		</div>
 	</section>
-	<section class="article">
+	<section id="blog" class="article">
 		<div class="container">
 			<h3 class=" text-center header article__header">The Naturalist Blog</h3>
 			<div class="row">
@@ -357,15 +436,22 @@
 						<div class="article__card-image">
 							<img src="./img/article/01.png" alt="image">
 						</div>
-						<h4 class="article__card-title">Food For Your Skin: A Diet To Achieve Glowing Skin For Your Skin
+						<h4 class="article__card-title">Food For Your Skin: A Diet To Achieve Glowing Skin For
+							Your Skin
 							Type</h4>
 						<div class="article__card-text">
-							<p>Your skin is a reflection of your body’s overall health. When your skin looks dull and
-								unkept it could be caused as a result of a poor diet, no exercise or bad skincare
-								habits. Today we are going to tackle a healthy diet for natural glowing skin.</p>
-							<p>All skin is different and it should be treated as such. A balanced diet is necessary for
-								all skin types but certain foods can cause breakouts for already oily skin and certain
-								foods can cause dehydration for already dry skin. So what should we include in our diet
+							<p>Your skin is a reflection of your body’s overall health. When your skin looks
+								dull and
+								unkept it could be caused as a result of a poor diet, no exercise or bad
+								skincare
+								habits. Today we are going to tackle a healthy diet for natural glowing skin.
+							</p>
+							<p>All skin is different and it should be treated as such. A balanced diet is
+								necessary for
+								all skin types but certain foods can cause breakouts for already oily skin and
+								certain
+								foods can cause dehydration for already dry skin. So what should we include in
+								our diet
 								and what should we avoid?</p>
 						</div>
 						<a href="#" class="article__card-link">Read more</a>
@@ -378,11 +464,15 @@
 						</div>
 						<h4 class="article__card-title">Hydrate Skin With These Hyaluronic Acid Rich Foods</h4>
 						<div class="article__card-text">
-							<p>In the last few years, there have been a lot of fast growing skincare ingredients but the
-								one that has been the most popular so far is Hyaluronic acid. HA helps hydrate your skin
+							<p>In the last few years, there have been a lot of fast growing skincare ingredients
+								but the
+								one that has been the most popular so far is Hyaluronic acid. HA helps hydrate
+								your skin
 								by holding in over 1000x its weight in water.</p>
-							<p>But, applying Hyaluronic acid directly to your face is not the only way! Hyaluronic acid
-								foods and supplements can provide you with the Hyaluronic acid your skin needs.</p>
+							<p>But, applying Hyaluronic acid directly to your face is not the only way!
+								Hyaluronic acid
+								foods and supplements can provide you with the Hyaluronic acid your skin needs.
+							</p>
 						</div>
 						<a href="#" class="article__card-link">Read more</a>
 					</div>
@@ -395,9 +485,12 @@
 						<h4 class="article__card-title">The Ultimate Skincare Acid Cheat Sheet</h4>
 						<div class="article__card-text">
 							<p>Skincare acids can often get confusing, but this cheat sheet will help show the
-								differences between them. Skincare acids help encourage cell turnover (which is the
-								process of old cells shedding and new cells coming through) which then helps improve
-								skin texture and even out skin tone. Between the two main skincare acids, there are
+								differences between them. Skincare acids help encourage cell turnover (which is
+								the
+								process of old cells shedding and new cells coming through) which then helps
+								improve
+								skin texture and even out skin tone. Between the two main skincare acids, there
+								are
 								other uses that can help target additional skincare concerns.</p>
 						</div>
 						<a href="#" class="article__card-link">Read more</a>
@@ -409,10 +502,10 @@
 	<footer class="footer">
 		<div class="container">
 			<ul class="footer__list list-unstyled">
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Blog</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="#product">Products</a></li>
+				<li><a href="#blog">Blog</a></li>
 			</ul>
 		</div>
 		<div class="footer__socials">
@@ -428,6 +521,8 @@
 		</div>
 	</footer>
 	<script src="./js/bootstrap.bundle.js"></script>
+	<script src="./js/main.js"></script>
+
 </body>
 
 </html>
