@@ -1,12 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@font-face {
+    font-family: 'Futura-Regular';
+    src: url(./../fonts/FuturaLT.woff2);
+}
+
+@font-face {
+    font-family: 'Futura-Bold';
+    src: url(./../fonts/FuturaLT-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Futura-light';
+    src: url(./../fonts/FuturaLT-Light.woff2);
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Futura-Regular';
+
+    /* sticky footer */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-body.locked {
-    overflow: hidden;
-}
+/* INDEX */
+
 
 .offer {
     padding-top: 14px;
@@ -56,6 +73,7 @@ body.locked {
 }
 
 .title {
+    font-family: 'Futura-Bold';
     font-weight: 400;
     font-size: 42px;
     line-height: 1.4;
@@ -71,9 +89,14 @@ body.locked {
 }
 
 .header {
-    font-weight: 400;
+    font-family: 'Futura-Bold';
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.45;
+}
+
+.navbar-toggler {
+    color: transparent;
 }
 
 .products__header {
@@ -308,7 +331,8 @@ body.locked {
 }
 
 .article__card-title {
-    font-weight: 400;
+    font-family: 'Futura-Bold';
+    font-weight: 700;
     font-size: 21px;
     line-height: 1.3;
     color: #B88987;
@@ -316,7 +340,8 @@ body.locked {
 }
 
 .article__card-text {
-    font-weight: 400;
+    font-weight: 300;
+    font-family: 'Futura-light';
     font-size: 13px;
     line-height: 1.6;
 }
@@ -336,6 +361,7 @@ body.locked {
     padding-top: 100px;
     padding-bottom: 100px;
     background: #CFACAD;
+
 }
 
 .footer__list {
@@ -357,16 +383,62 @@ body.locked {
 }
 
 .footer__socials {
+    margin-bottom: 20px;
+}
+
+.socials {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
 .menu {
     background: #CFACAD;
 }
+
+/* ABOUT */
+.background__image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.background__image img {
+    width: 100%;
+}
+
+.info__title {
+    font-weight: 700;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+.info__text p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #777777;
+    font-family: 'Futura-light';
+}
+
+.info__text {
+    margin-bottom: 50px;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #bde3ff7b;
+}
+
+.accordion-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #777777;
+    font-family: 'Futura-light';
+}
+
 
 /* Media */
 
@@ -397,9 +469,22 @@ body.locked {
         opacity: 1;
     }
 
+    .title {
+        font-size: 30px;
+    }
+
+    .info__text p {
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width:540px) {
+
+    .offer {
+        font-size: 12px;
+    }
+
     .banner__button {
         top: 50%;
         left: 50%;
@@ -415,7 +500,8 @@ body.locked {
     }
 
     .title {
-        font-size: 30px;
+        font-family: 'Futura-Bold';
+        font-size: 25px;
     }
 
     .text__title {
@@ -446,52 +532,67 @@ body.locked {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-}
 
-@media (max-width:410px) {
-    .logo img {
-        width: 100%;
-    }
-
-    .banner {
-        height: 350px;
-    }
-
-    .banner__button {
-        font-size: 12px;
-    }
-
-    .title {
-        font-size: 25px;
-    }
-
-    .text p {
-        font-size: 16px;
-    }
-
-    .about__text {
-        padding-top: 150px;
-        padding-bottom: 150px;
-    }
-
-    .subscription__form {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .subscription__input {
-        width: 100%;
-    }
-
-    .subscription__button {
-        width: 100%;
-    }
-
-    .footer__list {
+    .info__text p {
         font-size: 14px;
     }
 
-    .footer__copy {
+    .accordion-title {
+        font-size: 14px;
+    }
+
+    .accordion-text {
         font-size: 12px;
     }
-}
+
+    @media (max-width:410px) {
+        .offer {
+            font-size: 10px;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+
+        .banner {
+            height: 350px;
+        }
+
+        .banner__button {
+            font-size: 12px;
+        }
+
+        .title {
+            font-size: 25px;
+        }
+
+        .text p {
+            font-size: 16px;
+        }
+
+        .about__text {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        .subscription__form {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .subscription__input {
+            width: 100%;
+        }
+
+        .subscription__button {
+            width: 100%;
+        }
+
+        .footer__list {
+            font-size: 14px;
+        }
+
+        .footer__copy {
+            font-size: 12px;
+        }
+    }
