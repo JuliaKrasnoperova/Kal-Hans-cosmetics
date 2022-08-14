@@ -13,6 +13,10 @@
     src: url(./../fonts/FuturaLT-Light.woff2);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Futura-Regular';
 
@@ -22,9 +26,14 @@ body {
     flex-direction: column;
 }
 
+body>* {
+    /* sticky footer */
+    flex-shrink: 0;
+}
+
+
+
 /* INDEX */
-
-
 .offer {
     padding-top: 14px;
     padding-bottom: 14px;
